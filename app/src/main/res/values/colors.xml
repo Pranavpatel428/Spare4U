@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d3d4f</color>
+    <color name="colorPrimaryDark">#001727</color>
+    <color name="colorAccent">#49677b</color>
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+    <color name="button" >#DA2828</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="quantity_background_txt">#F4F4F4</color>
+    <color name="background_color">#7FC3C0C0</color>
+    <color name="login_background">#2196F3</color>
+    <color name="login_background_2">#D9571D</color>
+    <color name="login_card_background">#FF9C21</color>
+</resources>

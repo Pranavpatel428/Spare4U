@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Spare4U Admin</string>
+
+    <!-- Login Labels Value -->
+    <string name="login">Login</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="profile">Profile</string>
+    <string name="country">Country</string>
+    <string name="enter_country_name">Enter Country Name</string>
+    <string name="enter_continent_name">Enter Continent name</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="entry_company_name">Entry Company Name</string>
+    <string name="select_country_name">Select Country Name</string>
+    <string name="select_image">Select Image</string>
+    <string name="entry_company_url">Entry Company URL</string>
+    <string name="logout">Logout</string>
+    <string name="enter_year_description">Enter Year Description</string>
+    <string name="year_master">Year Master</string>
+    <string name="make_master">Make Master</string>
+    <string name="enter_group_description">Enter Group Description</string>
+    <string name="group_master">Group Master</string>
+</resources>

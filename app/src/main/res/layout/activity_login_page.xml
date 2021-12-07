@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background_2"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#ffff"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name"
+        android:layout_marginTop="50dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="55dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    app:hintTextColor="@color/black_color"
+                    >
+
+                    <EditText
+                        android:id="@+id/user_name_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/user_name"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapSentences"
+                        android:paddingTop="8dp"
+                        android:singleLine="true"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:hintTextColor="@color/black_color"
+                    >
+
+                    <EditText
+                        android:id="@+id/password_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableStart="@drawable/ic_lock_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:hint="@string/password"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:paddingTop="8dp"
+                        android:singleLine="true"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/login_button"
+                    android:text="@string/login"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/user_profile_image_background"
+        android:src="@drawable/user"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+</RelativeLayout>

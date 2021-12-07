@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_country_name"
+            android:textColor="@color/black_color"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:id="@+id/country_name_edt"
+            android:inputType="textCapSentences"
+            tools:ignore="Autofill"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_continent_name"
+            android:textColor="@color/black_color"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:id="@+id/continent_name_edt"
+            android:inputType="textCapSentences"
+            tools:ignore="Autofill"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
