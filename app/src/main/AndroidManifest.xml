@@ -30,13 +30,22 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ItemMasterPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Item Master"
+            android:parentActivityName=".HomePage"
+            />
         <activity
             android:name=".SideMasterPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Side Master"
+            android:parentActivityName=".HomePage"
+            />
         <activity
             android:name=".GroupMasterPage"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Group Master"
+            android:parentActivityName=".HomePage"
+            />
         <activity
             android:name=".YearMasterPage"
             android:exported="false"
