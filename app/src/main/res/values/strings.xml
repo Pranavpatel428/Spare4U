@@ -22,4 +22,7 @@
     <string name="make_master">Make Master</string>
     <string name="enter_group_description">Enter Group Description</string>
     <string name="group_master">Group Master</string>
+    <string name="enter_side">Enter Side.</string>
+    <string name="side_master">Side Master</string>
+    <string name="item_master">Item Master</string>
 </resources>

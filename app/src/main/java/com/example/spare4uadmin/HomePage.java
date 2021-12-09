@@ -439,6 +439,14 @@ public class HomePage extends AppCompatActivity {
         rediretActivity(this,GroupMasterPage.class);
     }
 
+    public void ClickSide(View view){
+        rediretActivity(this,SideMasterPage.class);
+    }
+
+    public void ClickItem(View view){
+        rediretActivity(this,GroupMasterPage.class);
+    }
+
     public void ClickLogout(View view){
         logout(this);
     }
