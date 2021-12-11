@@ -121,7 +121,6 @@ public class HomePage extends AppCompatActivity {
 
             try {
                 jsonObject = new JSONObject(response);
-                Log.e("Response",response);
                 if (jsonObject.getString("success").equals("true"))
                 {
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
@@ -444,7 +443,7 @@ public class HomePage extends AppCompatActivity {
     }
 
     public void ClickItem(View view){
-        rediretActivity(this,GroupMasterPage.class);
+        rediretActivity(this,ItemMasterPage.class);
     }
 
     public void ClickLogout(View view){

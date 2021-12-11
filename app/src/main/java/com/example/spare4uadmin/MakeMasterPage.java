@@ -136,7 +136,6 @@ public class MakeMasterPage extends AppCompatActivity {
 
             try {
                 jsonObject = new JSONObject(response);
-                Log.e("Response",response);
                 if (jsonObject.getString("success").equals("true"))
                 {
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
@@ -193,7 +192,6 @@ public class MakeMasterPage extends AppCompatActivity {
 
             try {
                 jsonObject = new JSONObject(response);
-                Log.e("Response",response);
                 if (jsonObject.getString("success").equals("true"))
                 {
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
@@ -527,7 +525,7 @@ public class MakeMasterPage extends AppCompatActivity {
         // collect all camera intents
         Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-        File f = new File(getExternalCacheDir().getPath(), "Vehicle.png");
+        File f = new File(getExternalCacheDir().getPath(), "Company_Logo.png");
         captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(this,getApplicationContext().getPackageName() + ".provider",f));
         allIntents.add(captureIntent);
 
@@ -563,7 +561,7 @@ public class MakeMasterPage extends AppCompatActivity {
         File getImage = getExternalCacheDir();
 
         if (getImage != null) {
-            outputFileUri = Uri.fromFile(new File(getImage.getPath(), "Vehicle.png"));
+                outputFileUri = Uri.fromFile(new File(getImage.getPath(), "Company_Logo.png"));
             //Log.e("U",String.valueOf(outputFileUri));
         }
         return outputFileUri;
