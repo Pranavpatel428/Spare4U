@@ -2,6 +2,7 @@ package com.example.spare4uadmin;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.Manifest.permission.CAMERA;
+import static android.Manifest.permission.RECORD_AUDIO;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 import androidx.annotation.NonNull;
@@ -82,6 +83,7 @@ public class HomePage extends AppCompatActivity {
         permissions.add(CAMERA);
         permissions.add(WRITE_EXTERNAL_STORAGE);
         permissions.add(ACCESS_FINE_LOCATION);
+        permissions.add(RECORD_AUDIO);
         permissionsToRequest = findUnAskedPermissions(permissions);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -109,7 +111,9 @@ public class HomePage extends AppCompatActivity {
         countryModels = new ArrayList<>();
 
         fab.setOnClickListener(v -> {
-            OpenDialog();
+            //OpenDialog();
+            Intent intent = new Intent(this,DemoAudioPage.class);
+            startActivity(intent);
         });
 
         FetchData();

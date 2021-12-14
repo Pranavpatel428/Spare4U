@@ -157,7 +157,7 @@ public class ItemMasterPage extends AppCompatActivity {
         if (item.getTitle().equals(getResources().getString(R.string.edit)))
         {
             editor.putString("selected_item_id",item_id_list.get(item.getOrder()));
-            Intent intent = new Intent(this,AddItemMasterPage.class);
+            Intent intent = new Intent(this,EditItemMasterPage.class);
             startActivity(intent);
 
         }

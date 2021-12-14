@@ -60,7 +60,7 @@ public class EditItemMasterPage extends AppCompatActivity {
     ArrayAdapter make_adapter,year_adapter,side_adapter,group_adapter;
     ArrayList<String> make_id_list,make_name_list,year_id_list,year_name_list;
     ArrayList<String> side_id_list,side_name_list,group_id_list,group_name_list;
-    String selected_make_id,selected_year_id,selected_side_id,selected_group_id;
+    String selected_make_id = "",selected_year_id = "",selected_side_id = "",selected_group_id = "";
     Uri picUri1,picUri2,picUri3,picUri4,picUri5;
     String mediaPath1 = "",mediaPath2 = "",mediaPath3 = "",mediaPath4 = "",mediaPath5 = "";
     String fetch_item_url;
